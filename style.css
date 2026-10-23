@@ -134,3 +134,117 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Manufacturing Doctor */
+
+.doctor {
+    background: #0b121b;
+}
+
+.doctor-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 28px;
+    margin-top: 48px;
+    align-items: stretch;
+}
+
+.doctor-label {
+    color: #d6ab62;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.doctor-symptoms {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.symptom-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 22px;
+    background: #121d29;
+    color: #f5f3ef;
+    border: 1px solid #34404d;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.symptom-btn span {
+    color: #d6ab62;
+    font-weight: 700;
+}
+
+.symptom-btn:hover {
+    border-color: #d6ab62;
+    transform: translateX(4px);
+}
+
+.symptom-btn.active {
+    background: #24303b;
+    border-color: #d6ab62;
+    box-shadow: inset 4px 0 0 #d6ab62;
+}
+
+.symptom-btn:focus-visible {
+    outline: 2px solid #f5d18c;
+    outline-offset: 3px;
+}
+
+.doctor-diagnosis {
+    background: linear-gradient(145deg, #192632, #111a25);
+    border: 1px solid rgba(214, 171, 98, 0.35);
+    padding: 36px;
+}
+
+.doctor-diagnosis h3 {
+    color: #f5f3ef;
+    font-size: clamp(26px, 3vw, 36px);
+    margin-bottom: 32px;
+}
+
+.diagnosis-subheading {
+    color: #d6ab62;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 24px 0 10px;
+}
+
+#diagnosis-symptoms,
+#diagnosis-treatment {
+    color: #b5bfcb;
+    line-height: 1.75;
+}
+
+.doctor-cta {
+    display: inline-flex;
+    margin-top: 32px;
+}
+
+.doctor-note {
+    color: #8794a3;
+    font-size: 12px;
+    margin-top: 24px;
+    line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+    .doctor-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-diagnosis {
+        padding: 26px;
+    }
+}
+
